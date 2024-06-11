@@ -1,0 +1,2 @@
+let wallet = 50;
+ 
