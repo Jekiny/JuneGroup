@@ -18,17 +18,17 @@ else {
 
 
 //4/4
-let numOrStr = prompt('input number or string');
-switch (numOrStr ){
-case null :
-    console.log ('ви скасували');
-    break;
-    case '':
-        console.log('Empty String');
+let numOrStr = prompt('Введите число или строку:');
+switch (numOrStr) {
+    case null:
+        console.log('Вы отменили ввод.');
         break;
-        case isNaN(Number(numOrStr)):
-            console.log(' number is Ba_NaN')
-            break ;
-            default :
-            console.log('OK!')
+    case '':
+        console.log('Пустая строка.');
+        break;
+    case !isNaN(Number(numOrStr)):
+        console.log('Это число.');
+        break;
+    default:
+        console.log('Это не число.');
 }

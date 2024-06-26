@@ -207,17 +207,145 @@
 // } else {
 // console.log('OK!')
 // }
-let numOrStr = prompt('input number or string');
-switch (numOrStr ){
-case null :
-    console.log ('ви скасували');
-    break;
-    case '':
-        console.log('Empty String');
-        break;
-        case isNaN(Number(numOrStr)):
-            console.log(' number is Ba_NaN')
-            break ;
-            default :
-            console.log('OK!')
-}
+// let numOrStr = prompt('input number or string');
+// switch (numOrStr ){
+// case null :
+//     console.log ('ви скасували');
+//     break;
+//     case '':
+//         console.log('Empty String');
+//         break;
+//         case isNaN(Number(numOrStr)):
+//             console.log(' number is Ba_NaN')
+//             break ;
+//             default :
+//             console.log('OK!')
+// }
+
+let str = "im a string look, this ";
+//  console.log(str);
+//  console.log(str.length);
+
+// //  let subStr = str.substring(2,1)
+// //  console.log(subStr);
+
+//  let subStr = str.substring(str.length-2,2)
+//  console.log(subStr);
+// let numOrStr = prompt('Введіть число або рядок:');
+// console.log(numOrStr);
+
+// switch (true) {
+//     case numOrStr === null:
+//         console.log('Ви скасували ввід.');
+//         break;
+//     case numOrStr === '':
+//         console.log('Пустий рядок.');
+//         break;
+//     case NaN = (Number(numOrStr)) :
+//         console.log('Це не число (NaN).');
+//         break;
+//     default:
+//         console.log('Все в порядку!');
+// }
+
+
+// let numOrStr = prompt('input number or string');
+// switch (numOrStr ){
+// case null :
+//     console.log ('ви скасували');
+//     break;
+//     case '':
+//         console.log('Empty String');
+//         break;
+//         case isNaN(Number(numOrStr)):
+//             console.log(' number is _NaN')
+//             break ;
+//             default :
+//             console.log('OK!')
+// }
+
+// let ageDriver = 18;
+// let driverCar = 'VW';
+// let ageRequiredInCity = 21;
+// let ageRequiredAroundcity = 18;
+
+// let exceptionCarsInCity =[ 'Infinity' , 'Mercedes'];
+
+// allowedArroundCity = false;
+
+// allowedInCity = false;
+
+// if(ageDriver >= ageRequiredInCity) {
+
+//     allowedInCity = true;
+
+// } else if(ageDriver >= ageRequiredAroundCity) {
+
+//     allowedArroundCity = true;
+
+//     if (exceptionCarsInCity.contains(driverCar)) {
+
+//         allowedInCity = true;
+
+//     }
+
+// }
+
+
+
+
+// if (allowedInCity) {
+
+//     console.log("Allowed In City");
+
+// } else if (allowedArroundCity) {
+
+//     console.log("Alowed Around City");
+
+// } else {
+
+//     console.log("NMot Allowrd");
+
+// }
+
+//
+
+
+// function sumFromTo(min, max){
+//     let sum = 0; 
+//     for (let n = min; n<=max;n = n + 0.5 ){
+//         console.log(n);
+//   sum +=n;
+//     }
+//     return sum;
+//   }console.log(
+//     sumFromTo(20,30)
+//   );
+  
+// function num (min,max){
+// let sum =20;
+// for (let n= min; n<=max; n = n + 0.5){
+    
+// }
+// return sum;
+// }
+// console.log(num(20,30));
+
+// function hereNum(min,max){
+
+// }
+
+// // for ( let num = 20; num <= 30; num = num + 0.5){
+// //     console.log(num);
+// // }
+
+// function num(min, max) {
+//     let sum = 0;
+//     for (let n = min; n <= max; n += 0.5) {
+//         sum += n;//20 +20.5 
+//           console.log(sum);
+//     }
+//     return sum;
+// }
+
+// console.log(num(20, 30)); 
