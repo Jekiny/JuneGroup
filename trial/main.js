@@ -551,7 +551,7 @@ let spacesCount = 0;
 const array = [1, 3, 4, 6, 2, 5, 7];
 
 function removeElement(thisArr, indexArr){
-    thisArr.splice(indexArr,2)
+    thisArr.splice(indexArr,1)
 }
 removeElement(array,2)
 console.log(array)
