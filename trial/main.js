@@ -335,17 +335,230 @@ let str = "im a string look, this ";
 
 // }
 
-// // for ( let num = 20; num <= 30; num = num + 0.5){
+// // for ( let num = 20; num <= 30; num = num / 1){
 // //     console.log(num);
 // // }
 
 // function num(min, max) {
 //     let sum = 0;
-//     for (let n = min; n <= max; n += 0.5) {
-//         sum += n;//20 +20.5 
-//           console.log(sum);
+//     for (let n = min; n <= max; n =n / 1 ) {
+//         sum /= n;//20 +20.5 
+//           console.log(n);
 //     }
 //     return sum;
 // }
 
-// console.log(num(20, 30)); 
+// console.log(num(10, 100)); 
+
+
+// for (let dollars = 10; dollars <= 100; dollars += 10) {
+//     const grivna = dollars / 26;
+//     console.log(`${dollars} долар = ${grivna} гривня`);
+// }
+    // function sumNumber(min,max, steep = 2 ){
+    //     let sum = 0;
+    //     for( let n = min; n <= max ; n += steep){
+    //         console.log(n);
+    //          sum += n;
+    //     }
+    //     return sum;
+    // }
+    // console.log(sumNumber(1,10));
+
+
+
+    // function printFromTo(input, start, end) {
+
+    //     for (let i = start ; i <= end; i++){
+    //       console.log(input[i]);
+    //     }
+        
+        
+          
+    //     }
+    //     printFromTo("Helllo", 0 , 5 );
+
+    // function printFromTo(input, start, end) {
+    //     if (typeof input !== 'string' ) {
+    //       console.log('Помилка: значення input не є рядком');
+    //       return;
+        
+    //     }
+    //     for (let i = start ; i <= end  ; i++) {
+    //      console.log(input.slice(start, end + 1))
+    //     }
+    //   }
+      
+    //   printFromTo("Hello", 0, 4);
+      
+// const title = 'Hello world';
+
+// for (let i = title.length -1; i >= 0; i -- ){
+//   console.log(title[i]);
+// }
+// function printBackwards(input, start, end) {
+//   for (let i = input.length - 1; i >= start; i--) {
+//     console.log(input[i]);
+//   }
+// }
+
+// printBackwards('Hello', 0, 4);
+// function printBackwards(input, start, end) {
+  
+//   for ( let i = input.length - 1 ; i >= start; i --){
+
+//     console.log(input[i]);
+//   }
+// }
+// printBackwards('Hello', 0 , 4);
+
+const title = 'String';
+
+// for (let perebor of title) {
+//   console.log(perebor);
+// }
+
+const text = 'Working with Strings ';
+let spacesCount = 0;
+
+// for (let char of text) {
+//   // рахуємо скільки пробілів у рядку
+//   if (char === ' ') {
+//     spacesCount++;
+//   }
+// }
+
+// console.log(spacesCount); // 2
+
+// const arrayElements = [ 'Michael', 'Lena', 'Misha'];
+
+// arrayElements.forEach(function(elem, index, arrayElements) {
+//   console.log('Hi ' + elem + '!');
+// });
+
+
+
+
+// ageArray.forEach(function(hui,vtoroixui,pAgeArray){
+
+//   console.log(hui,vtoroixui);
+// })
+
+
+// const newAgeArray = ageArray.map(age => {
+//   return `${age.name} ${age.age}`;
+// })
+// console.log (newAgeArray );
+
+// const people = [ 
+//   {name:"Michael", age: 23,budget : 3400, finance: 9},
+//   {name:"Rachael", age: 18,budget : 2200, finance: 9},
+//   {name:"Amigo", age: 32,budget : 1800, finance: 9},
+//   {name:"Fery", age: 56,budget : 1900, finance: 9},
+//   {name:"Lena", age: 15,    budget : 4000 , finance: 9}
+
+// ];
+// const adults = people.filter(person  => {
+//   if ( person.age >= 18){
+    
+//     return true
+
+
+//   }
+// })
+
+// console.log(adults);
+
+// const nameArray = ['Michael','Alice', 'John', 'Patryk'] 
+// function removeElement(array,item){
+
+//     console.log(removeElement.splice (0,1))
+
+// }
+
+// const amount = people.reduce((total, person) =>{
+//  return total +person.budget
+// } , 0 )
+
+
+
+
+// const nameArray = ['Michael','Alice', 'John', 'Patryk', 'Patasryk'] ;
+
+// // array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+// const newAr = nameArray.splice(1[,2])
+// const newAr = nameArray.splice((array,index) => {
+//    return array - index
+// } , 2 , 2 ) 
+
+// console.log (newAr)
+
+// nameArray.splice(2, 1);
+
+// console.log(nameArray);
+
+//  nameArray.splice(function(2,0){
+//     console.log(index);
+//  },2)
+
+
+// const myFish = ["angel", "clown", "drum", "mandarin", "sturgeon"];
+// const removed = myFish.splice(3, 1);
+
+// console.log (removed);
+
+
+//========================
+
+// const array = [1, 3, 4, 6, 2, 5, 7];
+
+// const newAr = array.splice(number => {
+//     return number.newAr[2]
+// })
+// console.log (newAr)
+
+// // const newAr = array.splice(2, 0, "drum")
+// // //(8) [1, 3, 'drum', 4, 6, 2, 5, 7]
+
+// // console.log (array)
+
+// function removeElement(asdad, index) {
+//     asdad.splice(index, 2);
+// }
+
+// removeElement(array, 3); // Удаляем элемент с индексом 2 (значение 4)
+// console.log(array); 
+
+// const nameArray = ['Michael','Alice', 'John', 'Patryk', 'Patasryk'] ;
+
+// function removeElement(someNewArr,index){
+//     someNewArr.splice(index ,2 )
+
+// }
+// removeElement(nameArray,2)
+// console.log (nameArray)
+
+// const thisNameArray = nameArray.map((item) => {
+//     return {
+//         info: `${item} новый массив`,
+//     };
+// });
+
+
+// console.log(thisNameArray)
+
+const array = [1, 3, 4, 6, 2, 5, 7];
+
+function removeElement(thisArr, indexArr){
+    thisArr.splice(indexArr,2)
+}
+removeElement(array,2)
+console.log(array)
+
+const mapArr = array.map((elemArr) =>{
+    return {
+        infoNumber: `${elemArr}`
+    }
+})
+console.log(mapArr)
