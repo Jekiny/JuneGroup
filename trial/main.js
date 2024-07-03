@@ -548,17 +548,85 @@ let spacesCount = 0;
 
 // console.log(thisNameArray)
 
-const array = [1, 3, 4, 6, 2, 5, 7];
+// const array = [1, 3, 4, 6, 2, 5, 7];
 
-function removeElement(thisArr, indexArr){
-    thisArr.splice(indexArr,1)
+// function removeElement(thisArr, indexArr){
+//     thisArr.splice(indexArr,1)
+// }
+// removeElement(array,2)
+// console.log(array)
+
+// const mapArr = array.map((elemArr) =>{
+//     return {
+//         infoNumber: `${elemArr}`
+//     }
+// })
+// console.log(mapArr)
+///////////////////////=========
+
+// function calculateAndShow (a,b , cb){
+//     const summ = a+b 
+//     cb(summ)
+// }
+
+// function logSmth (text){
+//     console.log('something text  to show:' , text)
+// }
+// calculateAndShow(1,2,logSmth)
+
+
+// function calculateAndShow (a,b , cb){
+//     const sum = a + b
+//     cb(sum)
+// }
+
+// function plusSmth (){
+//     console.log('something text  to show:' , )
+// }
+// calculateAndShow(1,2,logSmth)
+
+
+function calculateAndShow(cb){
+    return cb
 }
-removeElement(array,2)
-console.log(array)
+function logSmth(text){
+    console.log('this is function logsmth :', text)
+}
 
-const mapArr = array.map((elemArr) =>{
-    return {
-        infoNumber: `${elemArr}`
-    }
-})
-console.log(mapArr)
+function getSum(a,b){
+    return a + b 
+}
+
+// function getDiff(a,b){
+//     return a - b 
+// }
+
+function calculateAndShow(a,b , getsumCb,logSmtCb){
+    const summ = getsumCb(a,b)
+    logSmtCb(summ)
+}
+calculateAndShow (2,2,getSum,logSmth)
+
+
+
+
+// calculateAndShow (5,2,getDiff,logSmth)
+
+
+
+// function printFromTo(input, start, end) {
+//     if (typeof input !== 'string' ) {
+//       console.log('Помилка: значення input не є рядком');
+//       return;
+    
+//     }
+//     for (let i = start ; i <= end  ; i++) {
+//      console.log(input.slice(start, end + 1))
+//     }
+//   }
+//   printFromTo('Hello', 0 ,0);
+//   printFromTo('Hello', 1 ,1);
+//   printFromTo('Hello', 2 ,2);
+//   printFromTo('Hello', 3 ,3);
+//   printFromTo('Hello', 4 ,4);
+
