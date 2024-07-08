@@ -586,26 +586,26 @@ let spacesCount = 0;
 // calculateAndShow(1,2,logSmth)
 
 
-function calculateAndShow(cb){
-    return cb
-}
-function logSmth(text){
-    console.log('this is function logsmth :', text)
-}
-
-function getSum(a,b){
-    return a + b 
-}
-
-// function getDiff(a,b){
-//     return a - b 
+// function calculateAndShow(cb){
+//     return cb
+// }
+// function logSmth(text){
+//     console.log('this is function logsmth :', text)
 // }
 
-function calculateAndShow(a,b , getsumCb,logSmtCb){
-    const summ = getsumCb(a,b)
-    logSmtCb(summ)
-}
-calculateAndShow (2,2,getSum,logSmth)
+// function getSum(a,b){
+//     return a + b 
+// }
+
+// // function getDiff(a,b){
+// //     return a - b 
+// // }
+
+// function calculateAndShow(a,b , getsumCb,logSmtCb){
+//     const summ = getsumCb(a,b)
+//     logSmtCb(summ)
+// }
+// calculateAndShow (2,2,getSum,logSmth)
 
 
 
@@ -630,3 +630,81 @@ calculateAndShow (2,2,getSum,logSmth)
 //   printFromTo('Hello', 3 ,3);
 //   printFromTo('Hello', 4 ,4);
 
+// // 8 lesson
+
+// function RegularFunction (){
+//     this.value =42
+//     setTimeout(function(){
+//         console.log (this.value);
+//     }, 1000);
+// }
+
+// const arrowFunction = () => {
+//     this.value = 67;
+//     setTimeout(() =>  { 
+//         console.log (this.value);
+//     },1000)
+// }
+
+//  new RegularFunction();
+// arrowFunction()
+
+//  arrowFun = () => {
+//     this.val = 52;
+//     console.log(this.val)
+// }
+// arrowFun()
+
+// let ladder ={
+//      up: function(number){
+//          this.number = 2;
+//          this.downFunction = function (secondNum){
+//             this.secondNum = 2;
+//             this.functionPlus = function (){
+//                 this.plus = this.number + this.secondNum
+//                 console.log(functionPlus)
+//             }
+//          }
+//          console.log(this.number)
+//      }
+// }
+// console.log(ladder.functionPlus())
+
+// let ladder = {
+//   firstnum: 'John',
+//   secondnum: 'Alex',
+//   up: function() {
+//       console.log(`Hello ${this.firstnum}`);
+      
+//   },
+//   down: function() {
+//       console.log(`${this.secondnum}`);
+//   },
+//   showStep: function() {
+//       console.log(`Hello ${this.firstnum}, ${this.secondnum}`);
+//   }
+// };
+
+// ladder.showStep();
+
+
+let ladder = {
+    bankAccount: "Bofa",
+    name: 'Alex',
+    surname: 'Johnson',
+    birthdate: "11.02.1991",
+    bankAccountAmount: "1250$",
+
+    up: function() {
+        console.log(`Bank Account: ${this.bankAccount}\nName: ${this.name}\nSurname: ${this.surname}`);
+    },
+    down: function() {
+        console.log(`Birthdate: ${this.birthdate}\nBank Account Amount: ${this.bankAccountAmount}`);
+    },
+    showStep: function() {
+        const data = this.up() + this.down();
+        console.log(data)
+    }
+};
+
+ladder.showStep();
