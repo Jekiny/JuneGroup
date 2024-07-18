@@ -689,22 +689,63 @@ let spacesCount = 0;
 
 
 let ladder = {
-    bankAccount: "Bofa",
-    name: 'Alex',
-    surname: 'Johnson',
-    birthdate: "11.02.1991",
-    bankAccountAmount: "1250$",
+//     bankAccount: "Bofa",
+//     name: 'Alex',
+//     surname: 'Johnson',
+//     birthdate: "11.02.1991",
+//     bankAccountAmount: "1250$",
 
-    up: function() {
-        console.log(`Bank Account: ${this.bankAccount}\nName: ${this.name}\nSurname: ${this.surname}`);
-    },
-    down: function() {
-        console.log(`Birthdate: ${this.birthdate}\nBank Account Amount: ${this.bankAccountAmount}`);
-    },
-    showStep: function() {
-        const data = this.up() + this.down();
-        console.log(data)
-    }
-};
+//     up: function() {
+//         console.log(`Bank Account: ${this.bankAccount}\nName: ${this.name}\nSurname: ${this.surname}`);
+//     },
+//     down: function() {
+//         console.log(`Birthdate: ${this.birthdate}\nBank Account Amount: ${this.bankAccountAmount}`);
+//     },
+//     showStep: function() {
+//         const data = this.up() + this.down();
+//         console.log(data)
+//     }
+// };
 
-ladder.showStep();
+// ladder.showStep();
+
+// let objFirst = {
+//     name: "test1",
+
+//         printContextValue: function(){
+//             console.log(this)
+//         }
+// };
+
+// let objSecond = {
+//     name: 'Test2',
+
+// };
+
+// let objThird = new Object ();
+// objThird.name = 'Test3';
+
+// objSecond.printContextValue = objFirst.printContextValue;
+
+
+// function Person (names, surname) {
+//     this.name = names;
+//     this.surname = surname;
+// }
+
+// const person1 = new Person('John',30);
+// const person2 = new Person('Alex',30);
+
+// console.log(person1);
+// console.log(person2)
+
+function SomePerson(names, surname) {
+    this.name = names;
+    this.surname = surname;
+}
+
+const person1 = new SomePerson('John', 30);
+const person2 = new SomePerson('Alex', 30);
+
+console.log(person1);
+console.log(person2);
