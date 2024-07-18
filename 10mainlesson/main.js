@@ -1,3 +1,5 @@
+
+// 10.2
 const bankId= [
     {id: 35 , name : 'John' , amount : 11256},
     {id: 12 , name : 'Alex' , amount : 1235},
@@ -12,6 +14,6 @@ const bankId= [
 const pairId = bankId.filter (user  => user.id % 2 === 0)
 console.log(pairId);
 
-const bankPairId = pairId .map((users) => users)
+const bankPairId = pairId .map((users) => users.id)
 
 console.log(bankPairId)
