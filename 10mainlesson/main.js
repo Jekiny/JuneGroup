@@ -11,7 +11,8 @@ const bankIdFirst= [
     {id: 22 , name : 'Winsent' , amount : 976},
 ];
 
-const pairId = bankIdFirst.filter (user  => user.id % 2 === 0)
+const pairId = bankIdFirst.filter (user  => 
+    user.id % 2 === 0)
 console.log(pairId);
 
 const bankPairId = pairId .map((users) => users.id)
@@ -36,3 +37,15 @@ const uptdateId = bankId.filter(userId => {
     }
 })
 console.log(uptdateId)
+
+// 10.1
+const userId = {
+    name: 'John',
+    emial: 'jiko@gmail.com',
+    mobilephone: '+347218908',
+    homeadress: 'Kyiv',
+
+};
+for(const keyUserId in userId){
+    console.log (`${keyUserId}: ${userId[keyUserId]}`)
+}
