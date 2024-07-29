@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Польщователь системы</p>
+<ul id="userlist"></ul>
+
+
+
+
+
+    <script>
+
+let users = [
+    {
+        balance: '1250,90',
+        age: 24,
+        name: {
+            first: "Golden",
+            LastName: "Bishop",
+        },
+        company: "Ewes",
+        email: "asdada@asdad.com",
+        friends: [
+            {
+                id: 0,
+                name: "Bachanskiy andriy",
+            },
+            {
+                id: 1,
+                name: "andre andriy",
+            },
+            {
+                id: 2,
+                name: "adasda andriy",
+            }
+        ]
+    },
+    {
+        balance: '980,50',
+        age: 30,
+        name: {
+            first: "John",
+            LastName: "Doe",
+        },
+        company: "TechCorp",
+        email: "john.doe@techcorp.com",
+        friends: [
+            {
+                id: 0,
+                name: "Jane Smith",
+            },
+            {
+                id: 1,
+                name: "Emily Johnson",
+            },
+            {
+                id: 2,
+                name: "Michael Brown",
+            },
+            {
+                id: 3,
+                name: "Petkovsyi Brown",
+            },
+            {
+                id: 4,
+                name: "Julia Brown",
+            },
+        ]
+    },
+    {
+        balance: '1500,75',
+        age: 28,
+        name: {
+            first: "Alice",
+            LastName: "Johnson",
+        },
+        company: "Innovatech",
+        email: "alice.johnson@innovatech.com",
+        friends: [
+            {
+                id: 0,
+                name: "Chris Evans",
+            },
+            {
+                id: 1,
+                name: "Natalie Portman",
+            },
+            {
+                id: 2,
+                name: "Robert Downey",
+            },
+        ]
+    }
+];
+
+
+let list = document.querySelector("#userlist");
+
+for (let i = 0; i < users.length; i++){
+    const currentUser = users[i];
+    let   fullName = `${currentUser.name.first} ${currentUser.name.LastName}`;
+    let liContent =`${fullName} (${currentUser.email})`;
+    let li = document.createElement("li");
+    li.textContent = liContent;
+    list.append(li);
+}
+// в чем отличие InnerHtml ot textContent
+
+
+    </script>
+</body>
+</html>

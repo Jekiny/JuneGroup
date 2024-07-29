@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зміна кольору тексту</title>
+    
+</head>
+<body>
+   <button id="myButton">Click me</button>
+   <button id="next">
+    Clear
+   </button>
+<script>
+
+const button = document.querySelector("#myButton")
+
+button.addEventListener('mouseover',doSmth)
+function doSmth(){
+    console.log('this')
+}
+
+
+const clearBtn = document.querySelector("#next") 
+clearBtn.addEventListener("click",btnRem)
+function btnRem(){
+    button.removeEventListener('mouseover',doSmth)
+}
+
+// v2
+// Create the first list
+const div1 = document.createElement("div");
+const ul1 = document.createElement("ul");
+let item1 = document.createElement("li");
+let item2 = document.createElement("li");
+let item3 = document.createElement("li");
+let item4 = document.createElement("li");
+let item5 = document.createElement("li");
+let item6 = document.createElement("li");
+let item7 = document.createElement("li");
+let item8 = document.createElement("li");
+let item9 = document.createElement("li");
+
+div1.appendChild(ul1);
+ul1.appendChild(item1);
+ul1.appendChild(item2);
+ul1.appendChild(item3);
+ul1.appendChild(item4);
+ul1.appendChild(item5);
+ul1.appendChild(item6);
+ul1.appendChild(item7);
+ul1.appendChild(item8);
+ul1.appendChild(item9);
+item1.innerHTML = "1 * 1 = 2"; 
+item2.innerHTML = "1 * 2 = 2"; 
+item3.innerHTML = "1 * 3 = 3"; 
+item4.innerHTML = "1 * 4 = 4"; 
+item5.innerHTML = "1 * 5 = 5"; 
+item6.innerHTML = "1 * 6 = 6"; 
+item7.innerHTML = "1 * 7 = 7"; 
+item8.innerHTML = "1 * 8 = 8"; 
+item9.innerHTML = "1 * 9 = 9"; 
+
+document.body.appendChild(div1); 
+ul1.style.display = "flex"
+
+
+
+</script>
+
+</body>
+</html>

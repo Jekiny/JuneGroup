@@ -120,15 +120,16 @@
 //  jul[1] = 33
 // console.log(`Jul array: ${jul}`)
 
-const yev = [ 'Yevhen', 35, 'Maistrenko','New York','Salary:5000','Aze'];
-const users = [
-    { id: 10, name: 'Анна', isActive: true },
-    { id: 13, name: 'Петро', isActive: false },
-    { id: 12, name: 'Ірина', isActive: true },
-    { id: 15, name: 'Анна', isActive: true },
-    { id: 17, name: 'Петро', isActive: false },
-    { id: 6, name: 'Ірина', isActive: true },
-  ];
+// const yev = [ 'Yevhen', 35, 'Maistrenko','New York','Salary:5000','Aze'];
+// const users = [
+//     { id: 10, name: 'Анна', isActive: true },
+//     { id: 13, name: 'Петро', isActive: false },
+//     { id: 12, name: 'Ірина', isActive: true },
+//     { id: 15, name: 'Анна', isActive: true },
+//     { id: 17, name: 'Петро', isActive: false },
+//     { id: 6, name: 'Ірина', isActive: true },
+//   ];
   
-  const activeUsers = users.filter(user =>  user.id % 2 === 0);
-  console.log(activeUsers);
+//   const activeUsers = users.filter(user =>  user.id % 2 === 0);
+//   console.log(activeUsers);
+
