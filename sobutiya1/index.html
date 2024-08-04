@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .task{
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            padding: 3px 8px;
+            margin: 2px 10px;
+        }
+        .task-list {
+            width: 500px;
+        }
+    </style>
+    <!-- Операнд:1 <input id="input1" type="text"> <br>
+    Операнд:2 <input id="input2" type="text"> <br>
+
+    <button id="add-btn">+</button>
+    <button id="rem-btn">-</button>
+    <button id="mul-btn">*</button>
+    <button id="minus-btn">/</button> -->
+
+    <!-- RemoveEventListener -->
+     <!-- <button id="testId">Click me</button>
+     <button id="removeBtn">RemoveListener</button> -->
+
+     <!-- TodoList -->
+      <div class="input-pannel">
+        <input type="text", id="task-name-input">
+        <button id="add-task-btn">Добавить задачу</button>
+      </div>
+
+      <div class="task-list">
+        <div class="task">
+            <input type="checkbox">
+            <p>СДлеать Дом задание </p>
+        </div>
+
+        <div class="task">
+            <input type="checkbox">
+            <p>Купить хлеб  </p>
+        </div>
+
+        <div class="task">
+            <input type="checkbox">
+            <p>Устроится на работу </p>
+        </div>
+
+      </div>
+
+    <script>
+        //  let input1 = document.querySelector("#input1")
+        //  let input2 = document.querySelector("#input2");
+
+        //  let addBtn = document.querySelector("#add-btn")
+        //  let remBtn = document.querySelector("#rem-btn")
+        //  let mulBtn = document.querySelector("#mul-btn")
+        //  let minusBtn = document.querySelector("#minus-btn")
+
+         
+        //  remBtn.onclick = rem;
+        //  mulBtn.onclick = mul;
+        //  minusBtn.onclick = minus;
+
+        //  addBtn.addEventListener("click" ,function(){
+        //     alert(Number(input1.value) + Number(input2.value))
+        //  })  
+        
+
+        //   function rem (){
+        //     alert((input1.value) - (input2.value))
+        //   }
+           
+        //   function mul(){
+        //     alert((input1.value) * (input2.value))
+        //   }
+
+        //   function minus     (){
+        //     alert((input1.value) / (input2.value))
+        //   }
+
+        // RemoveEventListener
+          
+        // let testId = document.querySelector("#testId")
+        // let removeBtn = document.querySelector ("#removeBtn")
+
+        // function handler (){
+        //     testId.style.border = "2px solid yellow";   
+        //     alert("Обработчик событий")
+        // }
+
+        // testId.addEventListener("click",handler)
+
+        // removeBtn.addEventListener("click" , function(){
+        //    testId.removeEventListener ("click",handler)
+        //    testId.style.border = "none"
+        // })
+
+        // ToDO LIst
+        // 
+    //     <div class="input-pannel">
+    //     <input type="text", id="task-name-input">
+    //     <button id="add-task-btn">Добавить задачу</button>
+    //   </div>
+
+    //   <div class="task-list">
+    //     <div class="task">
+    //         <input type="checkbox">
+    //         <p>СДлеать Дом задание </p>
+    //     </div>
+
+    //     <div class="task">
+    //         <input type="checkbox">
+    //         <p>Купить хлеб  </p>
+    //     </div>
+
+    //     <div class="task">
+    //         <input type="checkbox">
+    //         <p>Устроится на работу </p>
+    //     </div>
+
+    //   </div>
+
+        let taskNameInput = document.querySelector("#task-name-input")
+        let addTaskBtn = document.querySelector("#add-task-btn")
+        let taskList = document.querySelector(".task-list")
+
+        addTaskBtn.addEventListener("click",addTaskHandler)
+
+        function addTaskHandler(){
+            let newTask = createTask(taskNameInput.value)
+            taskList.appendChild (newTask)
+        }
+
+        function createTask(text){
+            let div = document.createElement("div");
+            div.classList.add ("task");
+
+            let input = document.createElement("input");
+            input.type = "checkbox";
+
+            let p = document.createElement("p");
+            p.innerText = text;
+
+            div.append(input)
+            div.append(p)
+            return div 
+        }
+
+    </script>
+</body>
+</html>
