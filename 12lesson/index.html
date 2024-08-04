@@ -41,6 +41,14 @@
         </div>
 
       </div>
+
+      <!-- 12.3 -->
+       <br>
+       <button>button1</button>
+       <button>button2</button>
+       <button>button3</button>
+
+       <button id="removeBtn">RemoveListener</button> 
     <script>
 
         // lesson11
@@ -93,6 +101,26 @@ let taskNameInput = document.querySelector("#task-name-input")
             return div 
         }
 
+
+        // 12.3
+        const btn = document.querySelectorAll("button");
+        btn.forEach( threeButtons =>{
+            threeButtons.addEventListener("click", onClickHandler)
+        })
+      function onClickHandler (event){
+        alert(event.target.textContent)
+        
+      }
+       
+        const removeBtn = document.querySelector("#removeBtn")
+        removeBtn.addEventListener("click",function(){
+
+            btn.forEach( threeButtons =>{
+            threeButtons.removeEventListener("click", onClickHandler)
+        })
+            
+        })
+        
     </script>
 </body>
 </html>

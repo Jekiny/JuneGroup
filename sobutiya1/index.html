@@ -31,7 +31,7 @@
      <button id="removeBtn">RemoveListener</button> -->
 
      <!-- TodoList -->
-      <div class="input-pannel">
+      <!-- <div class="input-pannel">
         <input type="text", id="task-name-input">
         <button id="add-task-btn">Добавить задачу</button>
       </div>
@@ -52,8 +52,14 @@
             <p>Устроится на работу </p>
         </div>
 
-      </div>
+      </div> -->
 
+      <!-- This -->
+       <button>button1</button>
+       <button>button2</button>
+       <button>button3</button>
+
+       <button id="removeBtn">RemoveListener</button> 
     <script>
         //  let input1 = document.querySelector("#input1")
         //  let input2 = document.querySelector("#input2");
@@ -127,31 +133,70 @@
 
     //   </div>
 
-        let taskNameInput = document.querySelector("#task-name-input")
-        let addTaskBtn = document.querySelector("#add-task-btn")
-        let taskList = document.querySelector(".task-list")
+        // let taskNameInput = document.querySelector("#task-name-input")
+        // let addTaskBtn = document.querySelector("#add-task-btn")
+        // let taskList = document.querySelector(".task-list")
 
-        addTaskBtn.addEventListener("click",addTaskHandler)
+        // addTaskBtn.addEventListener("click",addTaskHandler)
 
-        function addTaskHandler(){
-            let newTask = createTask(taskNameInput.value)
-            taskList.appendChild (newTask)
-        }
+        // function addTaskHandler(){
+        //     let newTask = createTask(taskNameInput.value)
+        //     taskList.appendChild (newTask)
+        // }
 
-        function createTask(text){
-            let div = document.createElement("div");
-            div.classList.add ("task");
+        // function createTask(text){
+        //     let div = document.createElement("div");
+        //     div.classList.add ("task");
 
-            let input = document.createElement("input");
-            input.type = "checkbox";
+        //     let input = document.createElement("input");
+        //     input.type = "checkbox";
 
-            let p = document.createElement("p");
-            p.innerText = text;
+        //     let p = document.createElement("p");
+        //     p.innerText = text;
 
-            div.append(input)
-            div.append(p)
-            return div 
-        }
+        //     div.append(input)
+        //     div.append(p)
+        //     return div 
+        // }
+ 
+        // this
+
+        // removeBtn.addEventListener("click" , function(){
+        //    testId.removeEventListener ("click",handler)
+        //    testId.style.border = "none"
+        // })
+
+
+    //     <button>button1</button>
+    //    <button>button2</button>
+    //    <button>button3</button>
+
+    //    <button id="removeBtn">RemoveListener</button> 
+
+        const btn = document.querySelectorAll("button");
+        btn.forEach( threeButtons =>{
+            threeButtons.addEventListener("click", onClickHandler)
+        })
+      function onClickHandler (event){
+        alert(event.target.textContent)
+        
+      }
+       
+        const removeBtn = document.querySelector("#removeBtn")
+        removeBtn.addEventListener("click",function(){
+
+            btn.forEach( threeButtons =>{
+            threeButtons.removeEventListener("click", onClickHandler)
+        })
+            
+        })
+        
+      
+       
+       
+
+
+
 
     </script>
 </body>
